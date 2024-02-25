@@ -31,7 +31,7 @@ function printOutputCheckboxes() {
 		if (!preg_match('/^http[s]*:\/\/.+$/', $outputdata[$i]['outputname'], $matches)) {
 			print $outputdata[$i]['outputname'];
 		} else {
-			print $outputdata[$i]['outputname'] . "	<a href=\"". $outputdata[$i]['outputname'] . "\" target=\"_blank\"> &#128279;</a></label>";
+			print $outputdata[$i]['outputname'] . "	</label><a href=\"". $outputdata[$i]['outputname'] . "\" target=\"_blank\"> &#128279;</a>";
 		}
 		print '</div>';
 	}
